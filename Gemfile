@@ -55,3 +55,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # ログイン機能の実装
 gem "devise"
+
+# 画像投稿機能の実装
+gem 'carrierwave'
+gem 'cloudinary'
+gem 'dotenv-rails'

@@ -1,0 +1,29 @@
+// Place all the styles related to the photos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+/* 投稿一覧ページ */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    width: 40%;
+    border: 1px solid #000;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    margin: 15px;
+}
+.card img {
+    width: 100%;
+}
+.to-post-new {
+    text-align: center;
+}
+
+/* 新規投稿ページ */
+form#new_photo {
+    text-align: center;
+}
