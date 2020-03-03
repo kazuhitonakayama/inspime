@@ -1,11 +1,13 @@
-<h1>投稿一覧ページ</h1>
-  <div class="cards">
-    <% @photos.each do |photo| %>
-        <div class="card">
-          <%= image_tag photo.image_url %>
-          <p><%= photo.title %></p>
-          <p><%= photo.memo %></p>
-        </div>
-    <% end %>
-  </div>
-<div class="to-post-new"><a href="/photos/new">新規投稿へ</a></div>
+<div class="top-content">
+  <h1 class="top-content_title">投稿一覧ページ</h1>
+    <div class="cards">
+      <% @photos.each do |photo| %>
+          <div class="card">
+            <%= image_tag photo.image_url %>
+            <p><%= photo.title %></p>
+            <p><%= photo.memo %></p>
+          </div>
+      <% end %>
+    </div>
+  <div class="to-post-new"><a href="/photos/new">新規投稿へ</a></div>
+</div>

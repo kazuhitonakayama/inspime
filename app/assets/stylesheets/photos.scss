@@ -3,6 +3,24 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 /* 投稿一覧ページ */
+.top-content {
+    text-align: center;
+    background-image: url("/images/top-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    background-attachment: fixed;
+}
+.top-content_title {
+    display: inline-block;
+    background: linear-gradient(100deg, #000080, #fcbbbb 90%);
+        -webkit-background-clip: text;
+    background-clip: text;
+        -webkit-text-fill-color: transparent;
+    font-size: 36px;
+}
+
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -27,3 +45,4 @@
 form#new_photo {
     text-align: center;
 }
+
