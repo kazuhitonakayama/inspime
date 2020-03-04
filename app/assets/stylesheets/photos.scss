@@ -45,4 +45,14 @@
 form#new_photo {
     text-align: center;
 }
+.newpost {
+    text-align: center;
+    background-image: url("/images/top-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
 
