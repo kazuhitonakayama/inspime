@@ -55,4 +55,20 @@ form#new_photo {
     background-attachment: fixed;
     height: 100vh;
 }
+input#photo_title,
+input#photo_memo {
+    background: rgba(255,255,255,0.4);
+}
+input#photo_memo {
+    height: 150px;
+    width: 40%;
+}
+.newpost-title {
+    display: inline-block;
+    background: linear-gradient(100deg, #000080, #fcbbbb 90%);
+        -webkit-background-clip: text;
+    background-clip: text;
+        -webkit-text-fill-color: transparent;
+    font-size: 36px;
+}
 
