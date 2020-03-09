@@ -6,6 +6,7 @@
             <%= image_tag photo.image_url %>
             <p><%= photo.title %></p>
             <p><%= photo.memo %></p>
+            <%= link_to "編集", edit_photo_path(photo) %>
           </div>
       <% end %>
     </div>

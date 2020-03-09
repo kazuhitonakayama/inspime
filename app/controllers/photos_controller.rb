@@ -1,4 +1,5 @@
 class PhotosController < ApplicationController
+    before_action :set_list, only: %i(edit update)
     def index
         @photos = Photo.all
     end
@@ -15,9 +16,23 @@ class PhotosController < ApplicationController
           redirect_to action: :new
         end
     end
+
+    def edit
+    end
+
+    def update
+      if @photo.update_attributes(photo_params)
+        redirect_to "/"
+      else
+        render action: :edit
+      end
+    end
     
     private
       def photo_params
         params.require(:photo).permit(:image,:title,:memo)
+      end
+      def set_list
+        @photo = Photo.find_by(id: params[:id])
       end
 end
