@@ -3,6 +3,16 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 /* 投稿一覧ページ */
+a {
+    color: #000;
+    text-decoration: none;
+    background-color: red;
+    padding: 20px;
+    border-radius: 10px;
+}
+a:hover {
+    background-color: rgba(255,0,0,0.5);
+}
 .top-content {
     text-align: center;
     background-image: url("/images/top-bg.jpg");
@@ -11,6 +21,7 @@
     background-position-y: center;
     background-position-x: center;
     background-attachment: fixed;
+    padding-bottom: 40px;
 }
 .top-content_title {
     display: inline-block;
@@ -25,6 +36,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 30px;
 }
 .card {
     width: 40%;
