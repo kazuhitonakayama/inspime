@@ -53,6 +53,12 @@ a:hover {
 .to-post-new {
     text-align: center;
 }
+p.title {
+    font-weight: bold;
+}
+p.memo {
+    margin: 20px;
+}
 
 /* 新規投稿ページ */
 form#new_photo {

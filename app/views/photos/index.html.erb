@@ -4,8 +4,8 @@
       <% @photos.each do |photo| %>
           <div class="card">
             <%= image_tag photo.image_url %>
-            <p><%= photo.title %></p>
-            <p><%= photo.memo %></p>
+            <p class="title"><%= photo.title %></p>
+            <p class="memo"><%= photo.memo %></p>
             <%= link_to "編集", edit_photo_path(photo) %>
             <%= link_to "削除", photo, method: :delete, data: { confirm: "#{photo.title}を削除して大丈夫ですか？" } %>
           </div>

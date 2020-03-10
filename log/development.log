@@ -15068,3 +15068,232 @@ Processing by PhotosController#index as HTML
 Completed 200 OK in 93ms (Views: 88.5ms | ActiveRecord: 0.3ms | Allocations: 17972)
 
 
+Started GET "/" for ::1 at 2020-03-10 15:44:07 +0900
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:4
+  Rendered photos/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 905)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 17.5ms | ActiveRecord: 0.5ms | Allocations: 6335)
+
+
+Started GET "/" for ::1 at 2020-03-10 15:44:22 +0900
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:4
+  Rendered photos/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 905)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 22.2ms | ActiveRecord: 0.4ms | Allocations: 6338)
+
+
+Started GET "/" for ::1 at 2020-03-10 15:46:10 +0900
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:4
+  Rendered photos/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1143)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 20.9ms | ActiveRecord: 0.3ms | Allocations: 7616)
+
+
+Started GET "/" for ::1 at 2020-03-10 15:46:51 +0900
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:4
+  Rendered photos/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 912)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 55ms (Views: 50.6ms | ActiveRecord: 0.5ms | Allocations: 19598)
+
+
+Started GET "/" for ::1 at 2020-03-10 15:47:34 +0900
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:4
+  Rendered photos/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 905)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 61ms (Views: 56.2ms | ActiveRecord: 0.6ms | Allocations: 18661)
+
+
+Started GET "/photos/9/edit" for ::1 at 2020-03-10 15:47:52 +0900
+Processing by PhotosController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:41:in `set_list'
+  Rendering photos/edit.html.erb within layouts/application
+  Rendered photos/edit.html.erb within layouts/application (Duration: 47.3ms | Allocations: 6572)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 59ms (Views: 53.8ms | ActiveRecord: 0.3ms | Allocations: 12563)
+
+
+Started PATCH "/photos/9" for ::1 at 2020-03-10 15:47:57 +0900
+Processing by PhotosController#update as HTML
+  Parameters: {"authenticity_token"=>"0BHsIECAa7xEL1QPTOd25Qv04WZcBPbI96DitCt2gSQhrrczWOI80sIOcTkSRJT00TpCtv2/NUxStsR04lVMuA==", "photo"=>{"title"=>"鬼滅の刃", "memo"=>"悔しいよ。一つ何かできるようになっても、まだまだ次の壁は次々出てくる。"}, "commit"=>"編集する", "id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:41:in `set_list'
+DEPRECATION WARNING: update_attributes is deprecated and will be removed from Rails 6.1 (please, use update instead) (called from update at /Users/nakayama_kazuhito/Desktop/inspime/app/controllers/photos_controller.rb:24)
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 0.4ms | Allocations: 2958)
+
+
+Started GET "/" for ::1 at 2020-03-10 15:47:57 +0900
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:4
+  Rendered photos/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 908)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 12.6ms | ActiveRecord: 0.4ms | Allocations: 6334)
+
+
+Started GET "/photos/new" for ::1 at 2020-03-10 15:47:59 +0900
+Processing by PhotosController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering photos/new.html.erb within layouts/application
+  Rendered photos/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1467)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 13.6ms | ActiveRecord: 0.2ms | Allocations: 7069)
+
+
+Started GET "/photos" for ::1 at 2020-03-10 15:48:02 +0900
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:4
+  Rendered photos/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 907)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 17.9ms | ActiveRecord: 0.5ms | Allocations: 6335)
+
+
+Started GET "/photos/9/edit" for ::1 at 2020-03-10 15:48:03 +0900
+Processing by PhotosController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:41:in `set_list'
+  Rendering photos/edit.html.erb within layouts/application
+  Rendered photos/edit.html.erb within layouts/application (Duration: 1.8ms | Allocations: 692)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 21.8ms | ActiveRecord: 0.4ms | Allocations: 6635)
+
+
+Started PATCH "/photos/9" for ::1 at 2020-03-10 15:50:59 +0900
+Processing by PhotosController#update as HTML
+  Parameters: {"authenticity_token"=>"p2HwQLZsd0eU/nD9znMOWvT5a/xEVb7tTeTGvhzisDlW3qtTrg4gKRLfVcuQ0OxLLjfILOXufWno8uB+1cF9pQ==", "photo"=>{"title"=>"鬼滅の刃", "memo"=>"悔しいなあ。一つ何かできるようになっても、まだまだ次の壁は次々出てくる。"}, "commit"=>"編集する", "id"=>"9"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:41:in `set_list'
+DEPRECATION WARNING: update_attributes is deprecated and will be removed from Rails 6.1 (please, use update instead) (called from update at /Users/nakayama_kazuhito/Desktop/inspime/app/controllers/photos_controller.rb:24)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/photos_controller.rb:24:in `update'
+  [1m[36mPhoto Update (0.7ms)[0m  [1m[33mUPDATE "photos" SET "memo" = ?, "updated_at" = ? WHERE "photos"."id" = ?[0m  [["memo", "悔しいなあ。一つ何かできるようになっても、まだまだ次の壁は次々出てくる。"], ["updated_at", "2020-03-10 06:50:59.260117"], ["id", 9]]
+  ↳ app/controllers/photos_controller.rb:24:in `update'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/photos_controller.rb:24:in `update'
+Redirected to http://localhost:3000/
+Completed 302 Found in 16ms (ActiveRecord: 3.8ms | Allocations: 4875)
+
+
+Started GET "/" for ::1 at 2020-03-10 15:50:59 +0900
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:4
+  Rendered photos/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 905)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 19.4ms | ActiveRecord: 0.3ms | Allocations: 6337)
+
+
+Started GET "/photos/9/edit" for ::1 at 2020-03-10 15:51:04 +0900
+Processing by PhotosController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:41:in `set_list'
+  Rendering photos/edit.html.erb within layouts/application
+  Rendered photos/edit.html.erb within layouts/application (Duration: 1.4ms | Allocations: 691)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 23.4ms | ActiveRecord: 0.3ms | Allocations: 6637)
+
+
+Started PATCH "/photos/9" for ::1 at 2020-03-10 15:51:14 +0900
+Processing by PhotosController#update as HTML
+  Parameters: {"authenticity_token"=>"euie0NHUOegqm4xobGDZDeNdZ5rant90nIcaWOb8H+eLV8XDybZuhqy6qV4ywzscOZPESnslHPA5kTyYL9/Sew==", "photo"=>{"title"=>"鬼滅の刃", "memo"=>"悔しいなあ。一つ何かできるようになっても、またすぐ目の前に次の壁は次々出てくる。"}, "commit"=>"編集する", "id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:41:in `set_list'
+DEPRECATION WARNING: update_attributes is deprecated and will be removed from Rails 6.1 (please, use update instead) (called from update at /Users/nakayama_kazuhito/Desktop/inspime/app/controllers/photos_controller.rb:24)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/photos_controller.rb:24:in `update'
+  [1m[36mPhoto Update (0.8ms)[0m  [1m[33mUPDATE "photos" SET "memo" = ?, "updated_at" = ? WHERE "photos"."id" = ?[0m  [["memo", "悔しいなあ。一つ何かできるようになっても、またすぐ目の前に次の壁は次々出てくる。"], ["updated_at", "2020-03-10 06:51:14.855229"], ["id", 9]]
+  ↳ app/controllers/photos_controller.rb:24:in `update'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/photos_controller.rb:24:in `update'
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms (ActiveRecord: 2.4ms | Allocations: 4837)
+
+
+Started GET "/" for ::1 at 2020-03-10 15:51:14 +0900
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:4
+  Rendered photos/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 905)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.3ms | Allocations: 6334)
+
+
+Started GET "/photos/9/edit" for ::1 at 2020-03-10 15:51:19 +0900
+Processing by PhotosController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:41:in `set_list'
+  Rendering photos/edit.html.erb within layouts/application
+  Rendered photos/edit.html.erb within layouts/application (Duration: 1.7ms | Allocations: 691)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 12.4ms | ActiveRecord: 0.4ms | Allocations: 6644)
+
+
+Started PATCH "/photos/9" for ::1 at 2020-03-10 15:51:34 +0900
+Processing by PhotosController#update as HTML
+  Parameters: {"authenticity_token"=>"saq3xUbfCssPsd5jx0+11vcFBVuQediDEaYotqcXtO9AFezWXr1dpYmQ+1WZ7FfHLcumizHCGwe0sA52bjR5cw==", "photo"=>{"title"=>"鬼滅の刃", "memo"=>"悔しいなあ。一つ何かできるようになっても、またすぐ目の前に分厚い壁があるんだ。"}, "commit"=>"編集する", "id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:41:in `set_list'
+DEPRECATION WARNING: update_attributes is deprecated and will be removed from Rails 6.1 (please, use update instead) (called from update at /Users/nakayama_kazuhito/Desktop/inspime/app/controllers/photos_controller.rb:24)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/photos_controller.rb:24:in `update'
+  [1m[36mPhoto Update (0.5ms)[0m  [1m[33mUPDATE "photos" SET "memo" = ?, "updated_at" = ? WHERE "photos"."id" = ?[0m  [["memo", "悔しいなあ。一つ何かできるようになっても、またすぐ目の前に分厚い壁があるんだ。"], ["updated_at", "2020-03-10 06:51:34.144180"], ["id", 9]]
+  ↳ app/controllers/photos_controller.rb:24:in `update'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/photos_controller.rb:24:in `update'
+Redirected to http://localhost:3000/
+Completed 302 Found in 18ms (ActiveRecord: 2.3ms | Allocations: 4829)
+
+
+Started GET "/" for ::1 at 2020-03-10 15:51:34 +0900
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:4
+  Rendered photos/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 905)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 10.8ms | ActiveRecord: 0.3ms | Allocations: 6341)
+
+
