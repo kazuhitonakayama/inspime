@@ -1,5 +1,5 @@
 class PhotosController < ApplicationController
-    before_action :set_list, only: %i(edit update)
+    before_action :set_list, only: %i(edit update destroy)
     def index
         @photos = Photo.all
     end
@@ -26,6 +26,11 @@ class PhotosController < ApplicationController
       else
         render action: :edit
       end
+    end
+
+    def destroy
+      @photo.destroy
+      redirect_to "/"
     end
     
     private
