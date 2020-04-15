@@ -1,4 +1,5 @@
 <div class="top-content">
+  <%= link_to "サインアウト",destroy_user_session_path, class: "nav-link",method: :delete %>
   <h1 class="top-content_title">投稿一覧ページ</h1>
     <div class="cards">
       <% @photos.each do |photo| %>
