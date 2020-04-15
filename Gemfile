@@ -60,6 +60,7 @@ gem "devise"
 # 画像投稿機能の実装
 gem 'carrierwave'
 gem 'cloudinary'
+gem 'fog'
 gem 'dotenv-rails'
 
 # Herokuデプロイ用
