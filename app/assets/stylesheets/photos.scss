@@ -5,9 +5,12 @@
 /* 投稿一覧ページ */
 a {
     color: #000;
+    display: block;
     text-decoration: none;
     background-color: red;
-    padding: 20px;
+    padding: 5px;
+    width: 4%;
+    margin: auto;
     border-radius: 10px;
 }
 a:hover {
