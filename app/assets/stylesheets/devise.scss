@@ -12,11 +12,13 @@
 //     transition: 1s;
 // }
 .app-topsentence {
-    background: red;
+    background: rgba(0,0,0,0.1);
     width: 50%;
     position: absolute;
     top: 40%;
+    padding: 20px;
     left: 5%;
+    color: #fff;
 }
 .login-bg {
     position: absolute;
@@ -35,8 +37,8 @@
 .login-formarea {
     color: #fff;
     width: 25%;
-    border: 1px solid #fff;
-    background: rgba(0,0,0,0.5);
+    /* border: 1px solid #fff; */
+    background: rgba(0,0,0,0.1);
     border-radius: 10px;
     position: absolute;
     top: 50%;
